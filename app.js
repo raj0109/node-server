@@ -19,12 +19,13 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.post('/bill', function(req, res) {
+app.post('/api/invoice', function(req, res) {
   let data = req.body;
-  if (data instanceof Object && data.BillNumber) {
+  console.log(req.body);
+  if (data instanceof Object && data.Number) {
     const data =  JSON.stringify(req.body);
     fs.appendFileSync('./logs/1.txt', data + ',')
-    res.sendStatus(200)      
+    res.sendStatus(200)
   } else {
     res.sendStatus(400)
   }
