@@ -7,7 +7,7 @@ While installing NodeJS, make sure to select npm as part of installation. Instal
 https://www.guru99.com/download-install-node-js.html
 
 
-##Step to install dependencies:
+**Step to install dependencies:**
 
 1. Download the Repository and go to the root directory of repo.
 
@@ -16,7 +16,7 @@ https://www.guru99.com/download-install-node-js.html
 npm install
 ```
 
-##Step to start Server
+**Step to start Server**
 
 1. Run following command:
 ```
@@ -24,5 +24,3 @@ npm run start
 ```
 
 Once you start sending the notification, you can find logs folder where you can see log file which includes comma seperated notification.
-
-
