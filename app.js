@@ -19,7 +19,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.post('/api/invoice', function(req, res) {
+app.post('/api/workItemGenerated', function(req, res) {
   let data = req.body;
   console.log(req.body);
   if (data instanceof Object && data.Number) {
